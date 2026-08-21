@@ -46,11 +46,11 @@
 
       let randomNumber = Math.random();
 
-      if (randomNumber >= 0 && randomNumber < 1 / 3) {
+      if (randomNumber < 1 / 3) {
         computerMove = 'Rock';
-      } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+      } else if (randomNumber < 2 / 3) {
         computerMove = 'Paper';
-      } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+      } else {
         computerMove = 'Scissors';
       }
 
