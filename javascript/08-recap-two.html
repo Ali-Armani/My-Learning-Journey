@@ -38,29 +38,40 @@
     }
     
   </style>
-  
+
 </head>
 
 <body>
 
-  <h1>Rock Paper Scissors</h1>
+  <div class="container">
+    <h1>Rock Paper Scissors Game</h1>
+  </div>
+  
+  <div>
+    <div class="container">
+      <button onclick="playGame('Rock')" class="btn">
+        Rock
+      </button>
 
-  <button onclick="playGame('Rock')">
-    Rock
-  </button>
+      <button onclick="playGame('Paper')" class="btn">
+        Paper
+      </button>
 
-  <button onclick="playGame('Paper')">
-    Paper
-  </button>
+      <button onclick="playGame('Scissors')" class="btn">
+        Scissors
+      </button>
 
-  <button onclick="playGame('Scissors')">
-    Scissors
-  </button>
+    </div>
 
-  <button onclick="resetScore()">
-    Reset Score
-  </button>
+    <div class="container">
 
+      <button onclick="resetScore()" class="reset-btn">
+        Reset
+      </button>
+
+    </div>
+
+  </div>
 
   <script>
 
@@ -123,6 +134,8 @@ Ties: ${tieTimes}`
       );
 
     }
+
+
 
     function resetScore() {
 
