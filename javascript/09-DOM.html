@@ -35,6 +35,22 @@
     document.body.innerHTML = 'Excellent!';
     document.title = 'Good job!';
     */
+
+
+
+    // ====================================== document.querySelector
+
+    console.log(document.querySelector('button'));
+    console.log(document.querySelector('button').innerHTML);
+
+    document.querySelector('button').innerHTML = 'changed with querySelector';
+    console.log(document.querySelector('button').innerHTML);
+
+    // use a class attribute to select other than first elemnt:
+    // console.log(document.querySelector('.js-button'));
+    const buttonElement = document.querySelector('.js-button');
+    console.log(buttonElement);
+    
   </script>
   
 </body>
