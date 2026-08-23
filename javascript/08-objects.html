@@ -83,6 +83,20 @@
     console.log(object3 === object2);
     console.log(object3 === object1);
 
+    
+
+    // ========== Destructuring ==========
+    const object4 = {
+      message: 'Excellent!',
+      price: 799
+    };
+
+    // let message = object4.message;
+    const {message, price} = object4;
+    console.log(message);
+    console.log(price);
+    console.log(message, price);
+
   </script>
 </body>
 </html>
