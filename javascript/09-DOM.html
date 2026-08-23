@@ -15,7 +15,7 @@
     console.log(document.title);
     console.log(typeof document.title);
 
-    document.title = 'changed';
+    document.title = 'changed title';
     console.log(typeof document.title);
 
 
@@ -26,6 +26,10 @@
     console.log(typeof document);
     console.log(typeof document.body);
 
+    // console.log(document.body.innerHTML);
+    // document.body.innerHTML = 'changed innerHTML';
+
+    document.body.innerHTML = '<button>Submit</button>';
 
     /*
     document.body.innerHTML = 'Excellent!';
