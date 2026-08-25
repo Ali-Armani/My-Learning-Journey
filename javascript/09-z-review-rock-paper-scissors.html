@@ -34,6 +34,14 @@
 
     let computerMove = '';
 
+    function updateScoreElement() {
+      document.querySelector('.js-score').innerHTML =`
+      Wins: ${score.wins} <br>
+      Losses: ${score.losses} <br>
+      Draws: ${score.draws}
+      `
+    }
+
     function playGame(playerMove) {
 
       let randomNumber = Math.random();
