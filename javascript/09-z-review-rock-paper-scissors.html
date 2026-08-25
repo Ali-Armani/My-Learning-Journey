@@ -34,6 +34,12 @@
 
     let computerMove = '';
 
+    let score = JSON.parse(localStorage.getItem('score')) || {
+      wins: 0,
+      losses: 0,
+      draws: 0
+    };
+
     updateScoreElement();
 
     function updateScoreElement() {
