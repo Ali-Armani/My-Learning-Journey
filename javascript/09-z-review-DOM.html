@@ -20,6 +20,14 @@
   <script>
 
       let subsribeButtonElement = document.querySelector('.js-subscribe-button')
+
+    function getButtonElement() {
+      if (subsribeButtonElement.innerHTML === 'Subscribe') {
+        subsribeButtonElement.innerHTML = 'Subscribed'
+      } else {
+        subsribeButtonElement.innerHTML = 'Subscribe'
+      }
+    }
     
   </script>
 
